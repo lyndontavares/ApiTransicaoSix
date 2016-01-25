@@ -1,0 +1,141 @@
+<h3>Assistente de la Factura</h3>
+<div class="row">
+
+  <div class="col-md-12">
+    <div class="box box-success">
+      <div class="box-header with-border">
+
+            <ul class="nav nav-wizard">
+                <li ui-sref="wizard"><a href="#">Datos</a></li>
+                <li ui-sref="wizard2"  class="active"><a href="#">Itens</a></li>
+                <li ui-sref="wizard3"><a href="#">Totales</a></li>
+            </ul>
+  <br/>
+  <br/>
+
+
+ 
+ 
+
+ 
+  <div class="col-md-12">
+    <div class="box box-success">
+      <div class="box-header with-border">
+        
+
+        <div class="box-tools pull-right">
+          <div class="has-feedback">
+            <input type="text" class="form-control input-sm" placeholder="Search Mail">
+            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+          </div>
+        </div>
+        <!-- /.box-tools -->
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body no-padding">
+        <div class="mailbox-controls">
+          <!-- Check all button -->
+          <button type="button" class="btn btn-default btn-sm checkbox-toggle" ui-sref="wizard"><i class="fa fa-square-o"></i>
+          </button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default btn-sm" ><i class="fa fa-trash-o"></i></button>
+            <button type="button" class="btn btn-default btn-sm"><i class="fa fa-reply"></i></button>
+            <button type="button" class="btn btn-default btn-sm"><i class="fa fa-share"></i></button>
+          </div>
+          <!-- /.btn-group -->
+          <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
+          <div class="pull-right">
+            1-50/200
+            <div class="btn-group">
+              <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></button>
+              <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></button>
+            </div>
+            <!-- /.btn-group -->
+          </div>
+          <!-- /.pull-right -->
+        </div>
+        <div class="table-responsive mailbox-messages">
+          
+        <table id="ex" class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Codigo</th>
+              <th>Mercaderia</th>
+              <th>Cantidad</th>
+              <th>Unitario</th>
+              <th>Total</th>
+              <th NOWRAP="NOWRAP">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="tabela in tabelas">
+
+              <td>{{tabela.id}}</td>
+              <td>{{tabela.nome}}</td>
+              <td>{{tabela.qtde}}</td>              
+              <td>{{tabela.preco}}</td>              
+              <td>{{tabela.total}}</td>
+
+              <td><div class="btn-group">
+                <button type="button" class="btn btn-default" ui-sref="campo" ><i class="fa fa-square-o"></i></button>
+                <button type="button" class="btn btn-default" ui-sref="campo" ><i class="fa fa-trash-o"></i></button>
+              </div>
+            </td>
+          </tr>
+  
+        </tbody>
+     </table>
+
+
+
+          <!-- /.table -->
+        </div>
+        <!-- /.mail-box-messages -->
+      </div>
+      <!-- /.box-body -->
+      <div class="box-footer no-padding">
+        <div class="mailbox-controls">
+          <!-- Check all button -->
+          <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i>
+          </button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default btn-sm"><i class="fa fa-trash-o"></i></button>
+            <button type="button" class="btn btn-default btn-sm"><i class="fa fa-reply"></i></button>
+            <button type="button" class="btn btn-default btn-sm"><i class="fa fa-share"></i></button>
+          </div>
+          <!-- /.btn-group -->
+          <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
+          <div class="pull-right">
+            1-50/200
+            <div class="btn-group">
+              <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></button>
+              <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></button>
+            </div>
+            <!-- /.btn-group -->
+          </div>
+          <!-- /.pull-right -->
+        </div>
+      </div>
+    </div>
+    <!-- /. box -->
+  </div>
+
+
+
+
+
+
+
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="pull-right btn bg-orange margin" ui-sref="wizard3">Guardar y siguiente <i class="fa fa-arrow-right"></i></button>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+ 
+
+</div>

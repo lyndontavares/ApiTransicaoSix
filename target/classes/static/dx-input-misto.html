@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/admin-lte/css/AdminLTE.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="vendor/admin-lte/css/skins/_all-skins.css">
+    <link rel="stylesheet" href="vendor/others/nya-bs-select.css">
+    <link rel="stylesheet" href="vendor/others/daterangepicker-bs3.css">
+    <link rel="stylesheet" href="vendor/others/ui-grid.css" />
+    <link rel="stylesheet" href="vendor/others/grid.css" />
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="vendor/jquery/jquery-2.1.4.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="vendor/angular-js/angular.js"></script>
+    <script src="vendor/admin-lte/js/app.js"></script>
+    <script src="vendor/others/nya-bs-select.js"></script>
+    <script src="vendor/others/moment.js"></script>
+    <script src="vendor/others/daterangepicker.js"></script>
+    <script src="vendor/others/angular-daterangepicker.js"></script>
+    <script src="vendor/others/jquery.maskMoney.js" type="text/javascript"></script>
+    <script src="vendor/others/angular.maskMoney.js" type="text/javascript" charset="utf-8"></script>
+    <script src="vendor/others/ui-grid.js"></script>
+
+
+
+    <!--script:src[app.js] -->
+    <script src="teste.js"></script>
+
+</head>
+
+<body class="hold-transition skin-purple-light sidebar-mini" body-element ng-app="app">
+
+    <div class="wrapper">
+
+
+        <div ng-controller="MainController">
+            <div box titulo="DX-INPUT/DX-INPUTV" cor="success">
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div dxselect titulo="Selecione" opcoes=planos modelo=plano orientacao="vertical"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div dxselect titulo="Selecione" opcoes=planos modelo=plano orientacao="vertical"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div dxinputv tipo="text" modelo="pessoa.nome" titulo="Nome" dica="Digite seu nome"></div>
+                        <div dxinputv tipo="text" modelo="pessoa.endereco" titulo="Endereço" dica="Digite seu endereço"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div dxinputv tipo="text" modelo="pessoa.telefone" titulo="Telefone" dica="Digite seu telefone"></div>
+                        <div dxinputv tipo="text" modelo="pessoa.email" titulo="E-mail" dica="Digite seu email"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div dxselectv titulo="Selecione Plano" opcoes=planos modelo=plano orientacao="vertical"></div>
+                        <div dxselectv titulo="Selecione Plano" opcoes=planos modelo=plano orientacao="vertical"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div dxselectv titulo="Selecione Plano" opcoes=planos modelo=plano orientacao="vertical"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div dxselectv titulo="Selecione Plano" opcoes=planos modelo=plano orientacao="vertical"></div>
+                    </div>
+                </div>
+
+                <div class="box-footer">
+                    Visit <a href="https://select2.github.io/">Select2 documentation</a> for more examples and information
+                    about the plugin.
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

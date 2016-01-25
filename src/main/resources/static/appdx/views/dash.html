@@ -1,0 +1,64 @@
+<div class="wrapper">
+    <header class="main-header">
+
+        <!-- Logo -->
+        <a ui-sref="dash" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><img alt="" src="../../assets/img/dolphin.png" width="35px"></span>
+
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><img src="../../assets/img/dolphin.png" width="35px"> <b>Dolphin</b>ERP</span>
+
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only" Alternar></span>
+            </a>
+            
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a ui-sref="login"><i class="fa fa-sign-out"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+
+                <li ui-sref-active="active">
+                    <a ui-sref="over" close-sidebar-on-mobile><i class="fa fa-dashboard"></i> Dashboard</span></a>
+                </li>
+
+                <li ui-sref-active="active">
+                    <a ui-sref="wiz1" close-sidebar-on-mobile><i class="fa fa-circle-o"></i> Factura</a>
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+
+    <div class="content-wrapper">
+        <!-- Main content -->
+        <section class="content" ui-view="">
+        </section>
+        <!-- /.content -->
+    </div>
+
+    <footer class="main-footer">
+        <span</span>Dolphin X &copy; 2016
+    </footer>
+    
+    <div class="control-sidebar-bg"></div>

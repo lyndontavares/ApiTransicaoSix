@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
+
+	<script src="../vendor/jquery/jquery-2.1.4.js"></script>
+	<script src="../vendor/bootstrap/js/bootstrap.js"></script>
+	<script src="../vendor/angular-js/angular.js"></script>
+
+	<script src="jquery.maskMoney.js"></script>
+	<script src="angular-maskmoney.js"></script>
+
+
+
+</head>
+
+<body>
+
+	<div class="container" ng-app="app" ng-controller="main">
+
+		<input type="text" ui-maskmoney data-prefix="R$" data-decimal="," data-thousands="." data-precision="4"  ng-model="valor1" />
+
+		<input type="text" ui-maskmoney data-prefix="G$" data-decimal="," data-thousands="." data-precision="0"  ng-model="valor2" />
+		
+		<pre>
+        $("#demo3").maskMoney({prefix:'R$ ', allowNegative: true, thousands:'.', decimal:',', affixesStay: false});
+		</pre>		
+		
+	</div>
+
+
+<script>
+	
+	angular.module('app',['uimaskmoney']);
+	
+	angular.module('app').controller('main',function($scope){
+		$scope.valor1=1;		
+		$scope.valor2=2;		
+	});
+	
+</script>
+
+
+</body>
+
+</html>

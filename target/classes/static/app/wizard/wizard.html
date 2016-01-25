@@ -1,0 +1,78 @@
+<h3>Assistente de la Factura</h3>
+<div class="row">
+
+  <div class="col-md-12">
+    <div class="box box-success">
+      <div class="box-header with-border">
+
+            <ul class="nav nav-wizard">
+                <li ui-sref="wizard" class="active"><a href="#">Datos</a></li>
+                <li ui-sref="wizard2"><a href="#">Itens</a></li>
+                <li ui-sref="wizard3"><a href="#">Totales</a></li>
+            </ul>
+  <br/>
+  <br/>
+
+  <div class="input-group">
+    <label for="tabelaOrigem">Fecha</label>
+    <input type="text" ng-model="tabela.tabelaOrigem" class="form-control" id="tabelaOrigem" placeholder="Fecha de la factura"  >
+  </div>
+
+
+  <div class="col-xs-12">
+    <label>Plano</label>
+    <ol class="nya-bs-select" data-size="8" ng-model="plano" actions-box="true"  
+      style="width: 100%">
+      <li nya-bs-option="p in planos"><a>{{ p.descricao }}</a></li>
+    </ol>
+  </div> 
+
+
+  <div class="input-group">
+    <label for="destino">Moneda 1</label>
+    <input type="text" ng-model="tabela.tabelaDestino" class="form-control" id="tabelaDestino" placeholder="Moneda de la factura"  >
+  </div>
+
+  <div class="input-group">
+    <label for="destino">Moneda 2</label>
+    <input type="text" ng-model="tabela.tabelaDestino" class="form-control" id="tabelaDestino" placeholder="Moneda de la factura"  >
+  </div>
+
+  <div class="input-group">
+    <label for="destino">Moneda 3</label>
+    <input type="text" ng-model="tabela.tabelaDestino" class="form-control" id="tabelaDestino" placeholder="Moneda de la factura"  >
+  </div>
+
+  <div class="input-group">
+    <label for="chavePrimariaDestino">Condicion</label>
+    <input type="text" ng-model="tabela.chavePrimariaDestino" class="form-control" id="chavePrimariaDestino" placeholder="Condicion de pago"  >
+  </div>
+
+  <div class="input-group">
+    <label for="chavePrimariaDestino">Entidad</label>
+    <input type="text" ng-model="tabela.chavePrimariaDestino" class="form-control" id="chavePrimariaDestino" placeholder="Entidad de la factura"  >
+  </div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="pull-right btn bg-orange margin" ui-sref="wizard2">Guardar y siguiente <i class="fa fa-arrow-right"></i></button>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+ 
+
+</div>

@@ -1,0 +1,23 @@
+[ {
+  "@id" : 1,
+  "id" : 1,
+  "tabelaOrigem" : "CFGLOCA",
+  "tabelaDestino" : "TAB_LOCALIDADE",
+  "sincronizar" : true,
+  "chavePrimaria" : "NCODILOCA",
+  "chavePrimariaDestino" : "TAB_LOCALIDADE.PK",
+  "ordemAtualizacao" : 1,
+  "dataUltimaAtualizacao" : null,
+  "statusUltimaAtualizacao" : null
+}, {
+  "@id" : 2,
+  "id" : 2,
+  "tabelaOrigem" : "CFGPAIS",
+  "tabelaDestino" : "TAB_PAIS",
+  "sincronizar" : true,
+  "chavePrimaria" : "NCODIPAIS",
+  "chavePrimariaDestino" : "TAB_PAIS.PK",
+  "ordemAtualizacao" : 2,
+  "dataUltimaAtualizacao" : null,
+  "statusUltimaAtualizacao" : null
+} ]

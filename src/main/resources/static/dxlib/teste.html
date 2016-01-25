@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/admin-lte/css/AdminLTE.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="vendor/admin-lte/css/skins/_all-skins.css">
+    <link rel="stylesheet" href="vendor/others/nya-bs-select.css">
+    <link rel="stylesheet" href="vendor/others/daterangepicker-bs3.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="vendor/jquery/jquery-2.1.4.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="vendor/angular-js/angular.js"></script>
+    <script src="vendor/admin-lte/js/app.js"></script>
+    <script src="vendor/others/nya-bs-select.js"></script>
+    <script src="vendor/others/moment.js"></script>
+    <script src="vendor/others/daterangepicker.js"></script>
+    <script src="vendor/others/angular-daterangepicker.js"></script>
+    <script src="vendor/others/jquery.maskMoney.js" type="text/javascript"></script>
+    <script src="vendor/others/angular.maskMoney.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <!--script:src[app.js] -->
+    <script src="teste.js"></script>
+
+</head>
+
+<body class="hold-transition skin-purple-light sidebar-mini" body-element ng-app="app">
+    <div class="wrapper">
+
+        <!-- infobox
+    .row>(.col-md-3.col-sm-6.col-xs-12>div.info-box>span.info-box-icon.bg-blue>i.fa.fa-star-o^div.info-box-content>span.info-box-text{likes}^span.info-box-number{100.00})*4
+    -->
+
+
+        <!-- infobox
+    .row>(.col-md-3.col-sm-6.col-xs-12>div.info-box>span.info-box-icon.bg-blue>i.fa.fa-star-o^div.info-box-content>span.info-box-text{likes}^span.info-box-number{100.00})*4
+
+
+   .row>.col-md-3.col-sm-6.col-xs-12>div.info-box.bg-red>span.info-box-icon>i.fa.fa-comments-o^.info-box-text{likes}>span.info-box-number{41.000}
+    -->
+
+
+        <div infobox titulo="Marianne Wetzel" valor="100.000.000" progresso="100" descricao="Muito legal esse componente" cor="purple"
+        icon="fa-comments-o"></div>
+
+        <div infobox titulo="Lyndon Tavares" valor="100.000.000" progresso="100" descricao="Muito legal esse componente" cor="orange"
+        icon="fa-comments-o"></div>
+
+        <div infobox="" titulo="Marianne" cor="yellow" icon="fa-arrow-right"></div>
+
+        <div box titulo="Dolphin X" cor="danger">
+            <h1> Olá mundo</h1>
+            <ul>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+            </ul>
+        </div>
+
+
+        <div boxs titulo="Solid" cor="danger">
+            <h1> Olá mundo</h1>
+            <ul>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+            </ul>
+        </div>
+
+
+        <div boxx titulo="Colapsible" cor="danger">
+            <h1> Olá mundo</h1>
+            <ul>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+            </ul>
+        </div>
+
+
+        <div boxr titulo="Remove" cor="danger">
+            <h1> Olá mundo</h1>
+            <ul>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+            </ul>
+        </div>
+
+
+
+        <div boxi titulo="Input" cor="danger">
+            <h1> Olá mundo</h1>
+            <ul>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+                <li>oi</li>
+            </ul>
+        </div>
+
+
+
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Recently Added Products</h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+
+                <ul class="products-list product-list-in-box">
+                    <li class="item">
+                        <div class="product-img">
+                            <img src="dist/img/default-50x50.gif" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <a href="javascript::;" class="product-title">Samsung TV
+                      <span class="label label-warning pull-right">$1800</span></a>
+                            <span class="product-description">
+                          Samsung 32" 1080p 60Hz LED Smart HDTV.
+                        </span>
+                        </div>
+                    </li>
+                    <!-- /.item -->
+                    <li class="item">
+                        <div class="product-img">
+                            <img src="dist/img/default-50x50.gif" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <a href="javascript::;" class="product-title">Bicycle
+                      <span class="label label-info pull-right">$700</span></a>
+                            <span class="product-description">
+                          26" Mongoose Dolomite Men's 7-speed, Navy Blue.
+                        </span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer text-center">
+                <a href="javascript::;" class="uppercase">View All Products</a>
+            </div>
+            <!-- /.box-footer -->
+        </div>
+
+
+
+
+        <div ng-controller="MainController">
+            <div class="row">
+                <div class="col-md-12">
+                    <div box titulo="Dolphin Form Horizontal" cor="success">
+                        <div dxinput tipo="text" modelo="pessoa.nome" titulo="Nome" dica="Digite seu nome"></div>
+                        <div dxinput tipo="text" modelo="pessoa.endereco" titulo="Endereço" dica="Digite seu endereço"></div>
+                        <div dxinput tipo="text" modelo="pessoa.telefone" titulo="Telefone" dica="Digite seu telefone"></div>
+                        <div dxinput tipo="text" modelo="pessoa.email" titulo="E-mail" dica="Digite seu email"></div>
+                        <div dxinput tipo="text" modelo="pessoa.cargo" titulo="Cargo" dica="Digite seu cargo"></div>
+                        <div dxinput tipo="text" modelo="pessoa.salario" titulo="Salário" dica="Digite seu salário"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div ng-controller="MainController">
+            <div box titulo="Dolphin Form Horizontal/Colunado" cor="success">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div dxinput tipo="text" modelo="pessoa.nome" titulo="Nome" dica="Digite seu nome"></div>
+                        <div dxinput tipo="text" modelo="pessoa.endereco" titulo="Endereço" dica="Digite seu endereço"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div dxinput tipo="text" modelo="pessoa.telefone" titulo="Telefone" dica="Digite seu telefone"></div>
+                        <div dxinput tipo="text" modelo="pessoa.email" titulo="E-mail" dica="Digite seu email"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div dxinput tipo="text" modelo="pessoa.cargo" titulo="Cargo" dica="Digite seu cargo"></div>
+                        <div dxinput tipo="text" modelo="pessoa.salario" titulo="Salário" dica="Digite seu salário"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div ng-controller="MainController">
+            <div class="row">
+                <div class="col-md-12">
+                    <div box titulo="Dolphin Form Vertical" cor="success">
+                        <div dxinputv tipo="text" modelo="pessoa.nome" titulo="Nome" dica="Digite seu nome"></div>
+                        <div dxinputv tipo="text" modelo="pessoa.endereco" titulo="Endereço" dica="Digite seu endereço"></div>
+                        <div dxinputv tipo="text" modelo="pessoa.telefone" titulo="Telefone" dica="Digite seu telefone"></div>
+                        <div dxinputv tipo="text" modelo="pessoa.email" titulo="E-mail" dica="Digite seu email"></div>
+                        <div dxinputv tipo="text" modelo="pessoa.cargo" titulo="Cargo" dica="Digite seu cargo"></div>
+                        <div dxinputv tipo="text" modelo="pessoa.salario" titulo="Salário" dica="Digite seu salário"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div ng-controller="MainController">
+            <div box titulo="Dolphin Form Vertical/Colunado" cor="success">
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div dxselect titulo="Selecione" opcoes=planos modelo=plano orientacao="vertical"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div dxselect titulo="Selecione" opcoes=planos modelo=plano orientacao="vertical"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div dxinputv tipo="text" modelo="pessoa.nome" titulo="Nome" dica="Digite seu nome"></div>
+                        <div dxinputv tipo="text" modelo="pessoa.endereco" titulo="Endereço" dica="Digite seu endereço"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div dxinputv tipo="text" modelo="pessoa.telefone" titulo="Telefone" dica="Digite seu telefone"></div>
+                        <div dxinputv tipo="text" modelo="pessoa.email" titulo="E-mail" dica="Digite seu email"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div dxselectv titulo="Selecione Plano" opcoes=planos modelo=plano orientacao="vertical"></div>
+                        <div dxselectv titulo="Selecione Plano" opcoes=planos modelo=plano orientacao="vertical"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div dxselectv titulo="Selecione Plano" opcoes=planos modelo=plano orientacao="vertical"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div dxselectv titulo="Selecione Plano" opcoes=planos modelo=plano orientacao="vertical"></div>
+                    </div>
+                </div>
+
+                <div class="box-footer">
+                    Visit <a href="https://select2.github.io/">Select2 documentation</a> for more examples and information
+                    about the plugin.
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div ng-controller="MainController">
+            <div class="row">
+                <div class="col-md-12">
+                    <div box titulo="Dolphin Form Vertical" cor="success">
+
+                        <div class="form-group">
+                            <label>Select</label>
+                            <div class="select2 select2-container select2-container--default">
+                                <ol class="nya-bs-select" data-size="8" ng-model="plano" actions-box="true" style="width: 100%;">
+                                    <li nya-bs-option="p in planos"><a>{{ p.descricao }}</a></li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div dxselectv titulo="Selecione Plano" opcoes=planos modelo=plano orientacao="vertical"></div>
+
+
+                        <pre>
+                             plano selecionadp: {{plano}} <br>
+                             planos: {{planos}}
+                         </pre>
+
+                        <div class="box-footer">
+                            Visit <a href="https://select2.github.io/">Select2 documentation</a> for more examples and information
+                            about the plugin.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div ng-controller="MainController">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div box titulo="Dolphin Form Horizontal" cor="info">
+
+                            <!--<div class="form-group">   
+                            <label>Select</label>
+                            <div class="input-group">
+                                <ol class="nya-bs-select" 
+                                    data-size="8" ng-model="plano" 
+                                    actions-box="true" >
+                                <li nya-bs-option="p in planos"><a>{{ p.descricao }}</a></li>
+                                </ol>
+                            </div>
+                         </div>-->
+
+
+
+                            <div class="col-md-6">
+                                <div dxselect titulo="Selecione" opcoes=planos modelo=plano orientacao="vertical"></div>
+                                <div dxselect titulo="Selecione" opcoes=planos modelo=plano orientacao="vertical"></div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div dxinput tipo="text" modelo="pessoa.nome" titulo="Nome" dica="Digite seu nome"></div>
+                                <div dxinput tipo="text" modelo="pessoa.endereco" titulo="Endereço" dica="Digite seu endereço"></div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div dxinput tipo="text" modelo="pessoa.telefone" titulo="Telefone" dica="Digite seu telefone"></div>
+                                <div dxinput tipo="text" modelo="pessoa.email" titulo="E-mail" dica="Digite seu email"></div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div dxinput tipo="text" modelo="pessoa.cargo" titulo="Cargo" dica="Digite seu cargo"></div>
+                                <div dxinput tipo="text" modelo="pessoa.salario" titulo="Salário" dica="Digite seu salário"></div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <pre>
+                            plano selecionadp: {{plano}} <br>
+                            planos: {{planos}}
+                        </pre>
+                                <div class="box-footer">
+                                    Visit <a href="https://select2.github.io/">Select2 documentation</a> for more examples
+                                    and information about the plugin.
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div ng-controller="MainController">
+                    <div box titulo="Calendario" cor="info">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <dxdate titulo="Daterangepiker" modelo="periodo" opcoes="opts"></dxdate>
+                            </div>
+                            <div class="col-md-4">
+                                <dxdate titulo="Daterangepiker" modelo="periodo" opcoes="opts"></dxdate>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Data</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span></span>
+                                        <input date-range-picker id="daterange3" class="form-control date-picker ng-pristine ng-valid ng-isolate-scope ng-touched"
+                                        type="text" ng-model="periodo" options="{singleDatePicker: true}" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="box-footer">
+                            componente:
+                            <br> daterabgepiker
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                //.ng-controller[MainController]>div[box titulo="MaskMoney" cor="info"] >.row>.col=md-3>dxmaskmoney[titulo="Valor em Reais"
+                //modelo="valor1" opcoes="option1"] div[ng-controller=MainController] div[box titulo="Mask Money" cor=info]
+                //.row>.col-md-3>dxmaskmoney
+
+
+                <div ng-controller="MainController">
+                    <div box titulo="Mask Money" cor="info">
+                        <div class="row">
+
+                            <div class="col-md-3">
+                                <dxmaskmoney titulo="Valor em Reais" modelo="valor1" opcoes="options1">
+                                </dxmaskmoney>
+                                {{valor1}}
+                            </div>
+                            <div class="col-md-3">
+                                <dxmaskmoney titulo="Valor em Guaranis" modelo="valor2" opcoes="options2">
+                                </dxmaskmoney>
+                                {{valor2}}
+                            </div>
+                            <div class="col-md-3">
+                                <dxmaskmoney titulo="Valor em Dolares" modelo="valor3" opcoes="options3">
+                                </dxmaskmoney>
+                                {{valor3}}
+                            </div>
+                            <div class="col-md-3">
+                                <dxmaskmoney titulo="Valor em Euros" modelo="valor4" opcoes="options4">
+                                </dxmaskmoney>
+                                {{valor4}}
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+</body>
+
+</html>

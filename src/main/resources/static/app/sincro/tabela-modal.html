@@ -1,0 +1,55 @@
+<div class="modal-header">
+  <h3 class="modal-title">Sincronizar Tabela</h3>
+</div>
+<div class="modal-body">
+  <!-- <div class="col-xs-12">
+    <label>Selecione as tabelas</label>
+    <ol class="nya-bs-select" data-size="8" ng-model="tabelasSelecionadas"
+      style="width: 100%">
+      <li nya-bs-option="option in tabelas"><a>{{ option.name }}</a></li>
+    </ol>
+  </div> -->
+  
+<!--   <div class="col-xs-4">
+    <label for="ordemAtualizacao">Ordem</label>
+    <input type="text" ng-model="tabela.ordemAtualizacao" class="form-control" id="ordemAtualizacao" placeholder="Ordem de atualização" size="20" >
+  </div> -->
+  
+  <div class="input-group">
+    <label for="tabelaOrigem">Tabela Origem</label>
+    <input type="text" ng-model="tabela.tabelaOrigem" class="form-control" id="tabelaOrigem" placeholder="Nome da tabela origem"  >
+  </div>
+
+  <div class="input-group">
+    <label for="destino">Tabela Destino2</label>
+    <input type="text" ng-model="tabela.tabelaDestino" class="form-control" id="tabelaDestino" placeholder="Nome da tabela destino"  >
+  </div>
+
+  <div class="input-group">
+    <label for="chavePrimariaDestino">Sequência Tabela Destino</label>
+    <input type="text" ng-model="tabela.chavePrimariaDestino" class="form-control" id="chavePrimariaDestino" placeholder="Sequência Tabela Destino (ex: TABPAIS.PK)"  >
+  </div>
+
+<!--   <div class="checkbox">
+    <label>
+      <input type="checkbox"> Sincronizar???
+    </label>
+  </div>
+ -->  
+  
+<!--   <div class="form-group">
+    <label for="password"  control-label">Tabela Origem</label>
+  
+      <ol class="nya-bs-select" data-size="8" ng-model="tabelasSelecionadas" data-live-search="true"
+          style="width: 100%">
+        <li nya-bs-option="option in tabelas"><a>{{ option.name }} <span
+        class="glyphicon glyphicon-ok check-mark"></span></a></li>
+      </ol>
+  
+  </div> -->
+
+</div>
+<div class="modal-footer">
+  <button class="btn btn-default" type="button" ng-click="cancel()">Cancelar</button>
+  <button class="btn btn-primary" type="button" ng-click="ok()">Salvar</button>
+</div>

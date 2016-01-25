@@ -1,0 +1,127 @@
+{
+/*
+	 // Place your snippets for HTML here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+
+"nglib":{
+	"prefix":"nglib",
+	"body":[
+		
+    "<link rel=\"stylesheet\" href=\"vendor/bootstrap/css/bootstrap.css\">",
+    "<link rel=\"stylesheet\" href=\"vendor/admin-lte/css/AdminLTE.css\">",
+    "<link rel=\"stylesheet\" href=\"vendor/font-awesome/css/font-awesome.css\">",
+    "<link rel=\"stylesheet\" href=\"vendor/admin-lte/css/skins/_all-skins.css\">",
+    "<link rel=\"stylesheet\" href=\"vendor/others/nya-bs-select.css\">",
+    "<link rel=\"stylesheet\" href=\"vendor/others/daterangepicker-bs3.css\">",
+    "<link rel=\"stylesheet\" href=\"vendor/others/ui-grid.css\" />",
+    "<link rel=\"stylesheet\" href=\"vendor/others/grid.css\" />",
+    "<link rel=\"stylesheet\" href=\"css/app.css\">",
+
+    "<script src=\"vendor/jquery/jquery-2.1.4.js\"></script>",
+    "<script src=\"vendor/bootstrap/js/bootstrap.js\"></script>",
+    "<script src=\"vendor/angular-js/angular.js\"></script>",
+    "<script src=\"vendor/admin-lte/js/app.js\"></script>",
+    "<script src=\"vendor/others/nya-bs-select.js\"></script>",
+    "<script src=\"vendor/others/moment.js\"></script>",
+    "<script src=\"vendor/others/daterangepicker.js\"></script>",
+    "<script src=\"vendor/others/angular-daterangepicker.js\"></script>",
+    "<script src=\"vendor/others/jquery.maskMoney.js\"></script>",
+    "<script src=\"vendor/others/angular.maskMoney.js\" charset=\"utf-8\"></script>",
+    "<script src=\"vendor/others/ui-grid.js\"></script>"		
+	],
+	
+	"description":"libs angular"
+},
+
+"dxbox-info":{
+    "prefix":"dxbox",
+    "body":[
+         "<div box titulo=\"$1\" cor=\"info\">",
+                "<div class=\"row\">",
+                    "<div class=\"col-md-12\">",
+                        "$3",
+                    "</div>",
+                "</div>",
+            "</div>"
+    ] ,
+    "description":"rederiza um componente box INFO"
+},
+
+"dxbox-danger":{
+    "prefix":"dxbox",
+    "body":[
+         "<div box titulo=\"$1\" cor=\"info\">",
+                "<div class=\"row\">",
+                    "<div class=\"col-md-12\">",
+                        "$3",
+                    "</div>",
+                "</div>",
+            "</div>"
+    ] ,
+    "description":"rederiza um componente box DANGER"
+},
+
+"dxbox-success":{
+    "prefix":"dxbox",
+    "body":[
+         "<div box titulo=\"$1\" cor=\"success\">",
+                "<div class=\"row\">",
+                    "<div class=\"col-md-12\">",
+                        "$3",
+                    "</div>",
+                "</div>",
+            "</div>"
+    ] ,
+    "description":"rederiza um componente box SUCCESS"
+},
+
+"dxbox-warning":{
+    "prefix":"dxbox",
+    "body":[
+         "<div box titulo=\"$1\" cor=\"warning\">",
+                "<div class=\"row\">",
+                    "<div class=\"col-md-12\">",
+                        "$3",
+                    "</div>",
+                "</div>",
+            "</div>"
+    ] ,
+    "description":"rederiza um componente box WARNING"
+},
+
+"dxbox-default":{
+    "prefix":"dxbox",
+    "body":[
+         "<div box titulo=\"$1\" cor=\"default\">",
+                "<div class=\"row\">",
+                    "<div class=\"col-md-12\">",
+                        "$3",
+                    "</div>",
+                "</div>",
+            "</div>"
+    ] ,
+    "description":"rederiza um componente box DEFAULT"
+},
+
+
+"dxinfobox":{
+    "prefix":"dxinfobox",
+    "body":[
+        "<div infobox titulo=\"$1\" valor=\"$2\" progresso=\"$3\" descricao=\"$4\" cor=\"$5\" icon=\"$6\"></div>"
+   ] ,
+    "description":"rederiza um componente INFOBOX: <div infobox titulo=\"Titulo\" valor=\"100.000\" progresso=\"100\" descricao=\"descricao\" cor=\"blue\" icon=\"fa-comments-o\"></div>"
+}
+
+
+}
